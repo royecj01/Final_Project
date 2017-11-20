@@ -27,7 +27,10 @@ Public Class TicketsPage
             total = numTickets * price
             lblTotal.Text = total.ToString("C")
         Else
-            total = (numTickets * price) * discount
+            Dim subT As Decimal
+
+            subT = (numTickets * price) * discount
+            total = (numTickets * price) - subT
             lblTotal.Text = total.ToString("C")
         End If
     End Sub
