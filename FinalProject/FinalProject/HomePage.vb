@@ -6,6 +6,6 @@
     End Sub
 
     Private Sub btnFind_Click(sender As Object, e As EventArgs) Handles btnFind.Click
-        SearchResultsPage.ShowDialog()
+        ArtistSearchResultsPage.ShowDialog()
     End Sub
 End Class

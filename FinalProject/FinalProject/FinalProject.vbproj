@@ -76,10 +76,16 @@
       <DependentUpon>HomePage.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SearchResultsPage.Designer.vb">
-      <DependentUpon>SearchResultsPage.vb</DependentUpon>
+    <Compile Include="ArtistSearchResultsPage.Designer.vb">
+      <DependentUpon>ArtistSearchResultsPage.vb</DependentUpon>
     </Compile>
-    <Compile Include="SearchResultsPage.vb">
+    <Compile Include="ArtistSearchResultsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationResults.Designer.vb">
+      <DependentUpon>LocationResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocationResults.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,16 +103,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TicketsPage.Designer.vb">
+      <DependentUpon>TicketsPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TicketsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationResults.resx">
+      <DependentUpon>LocationResults.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistSearchResultsPage.resx">
+      <DependentUpon>ArtistSearchResultsPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketsPage.resx">
+      <DependentUpon>TicketsPage.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -24,13 +24,13 @@ Partial Class HomePage
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtArtist = New System.Windows.Forms.TextBox()
         Me.btnFind = New System.Windows.Forms.Button()
         Me.cboLocation = New System.Windows.Forms.ComboBox()
         Me.radArtist = New System.Windows.Forms.RadioButton()
         Me.radLocation = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.cboArtist = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,13 +51,6 @@ Partial Class HomePage
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Label3"
-        '
-        'txtArtist
-        '
-        Me.txtArtist.Location = New System.Drawing.Point(15, 75)
-        Me.txtArtist.Name = "txtArtist"
-        Me.txtArtist.Size = New System.Drawing.Size(121, 20)
-        Me.txtArtist.TabIndex = 3
         '
         'btnFind
         '
@@ -115,18 +108,26 @@ Partial Class HomePage
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'cboArtist
+        '
+        Me.cboArtist.FormattingEnabled = True
+        Me.cboArtist.Location = New System.Drawing.Point(15, 75)
+        Me.cboArtist.Name = "cboArtist"
+        Me.cboArtist.Size = New System.Drawing.Size(121, 21)
+        Me.cboArtist.TabIndex = 11
+        '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(318, 261)
+        Me.Controls.Add(Me.cboArtist)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.radLocation)
         Me.Controls.Add(Me.radArtist)
         Me.Controls.Add(Me.cboLocation)
         Me.Controls.Add(Me.btnFind)
-        Me.Controls.Add(Me.txtArtist)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Name = "HomePage"
@@ -139,11 +140,11 @@ Partial Class HomePage
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtArtist As TextBox
     Friend WithEvents btnFind As Button
     Friend WithEvents cboLocation As ComboBox
     Friend WithEvents radArtist As RadioButton
     Friend WithEvents radLocation As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents cboArtist As ComboBox
 End Class
