@@ -63,7 +63,7 @@ Partial Class ArtistSearchResultsPage
         Me.btnTickets.Text = "Get Tickets"
         Me.btnTickets.UseVisualStyleBackColor = True
         '
-        'SearchResultsPage
+        'ArtistSearchResultsPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -72,7 +72,7 @@ Partial Class ArtistSearchResultsPage
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListBox1)
-        Me.Name = "SearchResultsPage"
+        Me.Name = "ArtistSearchResultsPage"
         Me.Text = "Concerts"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

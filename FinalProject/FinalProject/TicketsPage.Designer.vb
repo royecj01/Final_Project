@@ -56,6 +56,7 @@ Partial Class TicketsPage
         'cboLevel
         '
         Me.cboLevel.FormattingEnabled = True
+        Me.cboLevel.Items.AddRange(New Object() {"A", "B", "C", "Stage"})
         Me.cboLevel.Location = New System.Drawing.Point(128, 71)
         Me.cboLevel.Name = "cboLevel"
         Me.cboLevel.Size = New System.Drawing.Size(121, 21)
@@ -73,6 +74,7 @@ Partial Class TicketsPage
         'cboSeats
         '
         Me.cboSeats.FormattingEnabled = True
+        Me.cboSeats.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.cboSeats.Location = New System.Drawing.Point(128, 114)
         Me.cboSeats.Name = "cboSeats"
         Me.cboSeats.Size = New System.Drawing.Size(121, 21)

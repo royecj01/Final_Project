@@ -9,12 +9,24 @@ Public Class TicketsPage
     Private Sub btnPurchase_Click(sender As Object, e As EventArgs) Handles btnPurchase.Click
         Dim total As Decimal
         Dim numTickets As Integer
-        Dim price As Decimal = 25.0
-        numTickets =
+        Dim price As Decimal
+        numTickets = cboSeats.SelectedItem.ToString
 
-        total = numTickets * price
-        If chkParking.Checked = True Then
-            Dim discount As Decimal = 0.1
+        If cboLevel.SelectedIndex = 0 Then
+            price = 15.0
+        ElseIf cboLevel.SelectedIndex = 1 Then
+            price = 20.0
+        ElseIf cboLevel.SelectedIndex = 2 Then
+            price = 25.0
+        ElseIf cboLevel.SelectedIndex = 3 Then
+            price = 30.0
+        End If
+
+        Dim discount As Decimal = 0.1
+        If chkParking.Checked = False Then
+            total = numTickets * price
+            lblTotal.Text = total.ToString("C")
+        Else
             total = (numTickets * price) * discount
             lblTotal.Text = total.ToString("C")
         End If
