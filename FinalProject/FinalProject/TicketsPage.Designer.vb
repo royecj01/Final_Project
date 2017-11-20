@@ -40,9 +40,8 @@ Partial Class TicketsPage
         Me.lblConcert.AutoSize = True
         Me.lblConcert.Location = New System.Drawing.Point(28, 28)
         Me.lblConcert.Name = "lblConcert"
-        Me.lblConcert.Size = New System.Drawing.Size(39, 13)
+        Me.lblConcert.Size = New System.Drawing.Size(0, 13)
         Me.lblConcert.TabIndex = 0
-        Me.lblConcert.Text = "Label1"
         '
         'Label2
         '

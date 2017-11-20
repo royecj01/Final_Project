@@ -64,6 +64,7 @@ Partial Class HomePage
         'cboLocation
         '
         Me.cboLocation.FormattingEnabled = True
+        Me.cboLocation.Items.AddRange(New Object() {"Fort Wayne, IN"})
         Me.cboLocation.Location = New System.Drawing.Point(15, 157)
         Me.cboLocation.Name = "cboLocation"
         Me.cboLocation.Size = New System.Drawing.Size(121, 21)
@@ -111,6 +112,7 @@ Partial Class HomePage
         'cboArtist
         '
         Me.cboArtist.FormattingEnabled = True
+        Me.cboArtist.Items.AddRange(New Object() {"Taylor Swift"})
         Me.cboArtist.Location = New System.Drawing.Point(15, 75)
         Me.cboArtist.Name = "cboArtist"
         Me.cboArtist.Size = New System.Drawing.Size(121, 21)

@@ -22,20 +22,20 @@ Partial Class ArtistSearchResultsPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstOptions = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnTickets = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstOptions
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 37)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(164, 160)
-        Me.ListBox1.TabIndex = 0
+        Me.lstOptions.FormattingEnabled = True
+        Me.lstOptions.Location = New System.Drawing.Point(12, 37)
+        Me.lstOptions.Name = "lstOptions"
+        Me.lstOptions.Size = New System.Drawing.Size(164, 160)
+        Me.lstOptions.TabIndex = 0
         '
         'Label1
         '
@@ -71,7 +71,7 @@ Partial Class ArtistSearchResultsPage
         Me.Controls.Add(Me.btnTickets)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lstOptions)
         Me.Name = "ArtistSearchResultsPage"
         Me.Text = "Concerts"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -80,7 +80,7 @@ Partial Class ArtistSearchResultsPage
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstOptions As ListBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnTickets As Button

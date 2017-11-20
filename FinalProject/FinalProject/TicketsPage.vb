@@ -3,14 +3,15 @@
 Public Class TicketsPage
 
     Private Sub TicketsPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        lblTotal.Text = String.Empty
+        lblConcert.Text = "Concert name"
     End Sub
 
     Private Sub btnPurchase_Click(sender As Object, e As EventArgs) Handles btnPurchase.Click
         Dim total As Decimal
         Dim numTickets As Integer
         Dim price As Decimal
-        numTickets = cboSeats.SelectedItem.ToString
+
 
         If cboLevel.SelectedIndex = 0 Then
             price = 15.0
@@ -20,18 +21,37 @@ Public Class TicketsPage
             price = 25.0
         ElseIf cboLevel.SelectedIndex = 3 Then
             price = 30.0
+        Else
+            MessageBox.Show("Please select a seat level.", "Error")
+            cboLevel.Focus()
         End If
+
+        If cboSeats.SelectedItem = Nothing Then
+            MessageBox.Show("Please select the number of seats you would like to purchase.", "Error")
+            cboSeats.Focus()
+        Else
+            numTickets = cboSeats.SelectedItem.ToString
+
+        End If
+
+
 
         Dim discount As Decimal = 0.1
         If chkParking.Checked = False Then
             total = numTickets * price
             lblTotal.Text = total.ToString("C")
+            'MessageBox.Show("Thank you for your purchase! Total Amount Paid: " & lblTotal.Text, "Purchase Complete")
         Else
             Dim subT As Decimal
 
             subT = (numTickets * price) * discount
             total = (numTickets * price) - subT
             lblTotal.Text = total.ToString("C")
+            'MessageBox.Show("Thank you for your purchase! Total Amount Paid: " & lblTotal.Text, "Purchase Complete")
+        End If
+
+        If lblTotal.Text > 0 Then
+            MessageBox.Show("Thank you for your purchase! Total Amount Paid: " & lblTotal.Text, "Purchase Complete")
         End If
     End Sub
 End Class
