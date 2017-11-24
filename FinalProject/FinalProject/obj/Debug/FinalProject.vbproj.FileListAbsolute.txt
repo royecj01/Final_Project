@@ -10,3 +10,6 @@ C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\obj\D
 C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\obj\Debug\FinalProject.HomePage.resources
 C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\obj\Debug\FinalProject.ArtistSearchResultsPage.resources
 C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\obj\Debug\FinalProject.TicketsPage.resources
+C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\bin\Debug\Artists.mdf
+C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\bin\Debug\Artists_log.ldf
+C:\Users\HP\Desktop\GitHub Project\Final-Project\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
