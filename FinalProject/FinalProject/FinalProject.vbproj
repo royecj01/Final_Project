@@ -90,17 +90,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Artists.xsd</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomePage.Designer.vb">
-      <DependentUpon>HomePage.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ArtistSearchResultsPage.Designer.vb">
       <DependentUpon>ArtistSearchResultsPage.vb</DependentUpon>
     </Compile>
     <Compile Include="ArtistSearchResultsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.vb">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
